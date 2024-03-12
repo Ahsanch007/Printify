@@ -1,0 +1,237 @@
+body {
+    font-family: 'CerebriSans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+
+  .column {
+    flex: 1;  
+    display:flex ;
+}
+
+.row {
+    display: flex; 
+    gap: 10px;
+}
+
+.header{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-search{
+    border-radius: 48px;
+    position: relative;
+    background-color: #f7f7f7;
+    height: 48px;
+    max-width: 700px;
+    width: 100%;
+    border: 1px solid #b9b2b2;
+    display: flex;
+    align-items: center;
+}
+.input-search input{
+    padding: 10px calc(1.5rem + 24px);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+.input-search:hover{
+    background-color: white;
+}
+.img{
+    position: absolute;
+    left: 17px;
+    top: 15px;
+}
+.currency p{
+    color: #485256;
+}
+
+.currency button{
+    padding: calc(.5rem - 1px) calc(1.5rem - 1px);
+    background-color: #fff;
+    border: 1px solid #c4c7c8;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s;
+}
+.currency button:hover{
+    color: #29ab51;
+}
+.products h1{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'CerebriSans', sans-serif;
+
+
+}
+.products p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'CerebriSans', sans-serif;
+}
+
+.products-item{
+    padding: 20px 0px;
+}
+
+.text-center{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.t-shirt{
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-bottom: 1rem;
+}
+.label{
+    font-size: 1em;
+    line-height: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -.014em;
+}
+
+.animated{
+    position: relative;
+}
+
+ 
+.left-text{
+    width: 50%;
+padding: 2rem;
+ 
+color: white;
+}
+.left-text h1{
+    font-weight: 700;
+    letter-spacing: -.014em;
+    font-size: 2.5em;
+    line-height: 3.5rem;
+    
+}
+
+.left-text p{
+    font-size: 1em;
+    line-height: 1.5rem;
+}
+.left-text button{
+    padding: calc(0.5rem - 1px) calc(1.5rem - 1px);
+    height: 40px;
+    color: #17262b;
+    background-color: #fff;
+    border-color: #c4c7c8;
+    border: 1px solid transparent;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .15s;
+    vertical-align: top;
+    line-height: 1.5rem;
+    font-family: inherit;
+    white-space: nowrap;
+    outline: none;
+    transition: .3s;
+}
+.left-text button:hover{
+    color: #29ab51 ;
+}
+
+
+.background{
+    background-image: url('../images/23_45_Catalog_Banner_Printify_Insights_XL_37071fde9d.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    width: 100%;
+    background-position: 90% 70%;
+    margin: 20px 0px;
+}
+
+
+
+
+
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+  @media(max-width: 800px){
+    .header{
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .input-search{
+      
+        max-width: auto;
+        width: 100%;
+   
+  }
+ 
+.left-text h1{
+    font-weight: 700;
+    letter-spacing: -.014em;
+    font-size: 2.5em;
+    line-height: 3.5rem;
+    margin-top: 0px;
+}
+.slick-track{
+    overflow: hidden !important;
+}
+.background{
+ 
+    background-position: 50% 50%;
+}
+
+}
+@media(max-width:500px){
+  
+    .left-text{
+        width: 70%;
+        padding: 1rem;
+    }
+}

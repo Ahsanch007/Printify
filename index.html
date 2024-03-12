@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printify</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Add these lines to include Slick CSS and JS files -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+</head>
+
+<body>
+
+    <!-- header section  -->
+
+    <div class="container">
+        <div class="header">
+            <div class="input-search">
+                <div class="img">
+                    <img src="./assets/images/search-interface-symbol.png" alt="">
+                </div>
+                <input type="text" placeholder="Search for products, brands, categories, and print providers">
+            </div>
+            <div class="currency" style="display: flex; gap: 10px; align-items: center;">
+                <p>
+                    Currency
+                </p>
+                <button>
+                    USD
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- product section  -->
+    <div class="container">
+        <div class="products">
+            <h1>
+                Explore Printify's best
+            </h1>
+            <p>
+                Here are some of the most popular product categories in our catalog.
+            </p>
+        </div>
+        <div id="products-slider" class="products-item">
+            <div class="row">
+                <div class="column">
+                    <div class="text-center">
+                        <img src="./assets/images/64394d8c2a4d01d9960aa971.png" class="t-shirt" alt="">
+                        <h4 class="label">
+                            T-shirts
+                        </h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="text-center">
+                        <img src="./assets/images/644a247275064722a60fc141.png" class="t-shirt" alt="">
+                        <h4 class="label">
+                            Sweatshirts
+                        </h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="text-center">
+                        <img src="./assets/images/5f61f729f714624d567e1ad3.png" class="t-shirt" alt="">
+                        <h4 class="label">
+                            Hoodies
+                        </h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="text-center">
+                        <img src="./assets/images/62bd6fb98babc26f690189b7.png" class="t-shirt" alt="">
+                        <h4 class="label">
+                            Bags
+                        </h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="text-center">
+                        <img src="./assets/images/6385fad37da87fcb1f0f1939.png" class="t-shirt" alt="">
+                        <h4 class="label">
+                            Baby Clothing
+                        </h4>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="text-center">
+                        <img src="./assets/images/63ac572b96b9a98aca0cda34.png" class="t-shirt" alt="">
+                        <h4 class="label">
+                            Phone Cases
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="background">
+            <div class="left-text">
+                <h1>
+                    Data Insights That Drive Your Business
+                </h1>
+                <p>
+                    Know what’s selling and successfully build your business.
+
+                </p>
+                <button>
+                    Explore Insights
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#products-slider .row').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next">Next</button>',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                            nextArrow: '<button type="button" class="slick-next">Next</button>',
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                            nextArrow: '<button type="button" class="slick-next">Next</button>',
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
