@@ -170,9 +170,27 @@ color: white;
 }
 
 
+ 
+
+.slick-prev{
+    left: -7px !important;
+    padding: calc(0.25rem - 1px) !important;
+    min-width: 32px !important;
+    height: 32px !important;
+    border: 1px solid #c4c7c8 !important;
+}
+.slick-next{
+    right: -7px !important;
+    padding: calc(0.25rem - 1px) !important;
+    min-width: 32px !important;
+    height: 32px !important;
+    border: 1px solid #c4c7c8 !important;
 
 
-
+}
+.slick-prev:before,.slick-next:before{
+    display: none;
+}
   @media (min-width: 576px) {
     .container {
       max-width: 540px;
